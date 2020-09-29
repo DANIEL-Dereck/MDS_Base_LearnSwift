@@ -88,8 +88,32 @@ for i in myIntArray {
     print(i)
 }
 
-for i in stride(from: myIntArray.count -1, to: 0, by: -1) {
+for i in stride(from: myIntArray.count - 1, to: 0, by: -1) {
     print(i)
+}
+
+var my2Dim: [[Int]] = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]]
+
+for u in my2Dim {
+    for v in u {
+        print("\(v) ", terminator: "")
+    }
+    print("")
+}
+
+var myIntArray2: [Any] = []
+
+//Dicotionaire
+var myDictonary: [String : Double] = [:]
+myDictonary["iPhone SE"] = 489.99
+myDictonary["iPhone S12"] = 2489.99
+myDictonary["Xiaomi"] = 389.99
+
+for (key,value) in myDictonary {
+    print("key = \(key) - value = \(value)")
 }
 
 
